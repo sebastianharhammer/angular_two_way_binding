@@ -8,5 +8,6 @@ import { Twowaybinding } from './twowaybinding/twowaybinding'
   styleUrl: './app.css'
 })
 export class App {
+  initialCount = 18;
   protected readonly title = signal('');
 }

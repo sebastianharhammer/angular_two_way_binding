@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, model } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -9,4 +9,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class Twowaybinding {
   firstName = 'blub';
+  count = model<number>(0);
+
+  updateCount(amount:number): void {
+    this.count.update(currentCount => currentCount + amount)
+  }
+
 }

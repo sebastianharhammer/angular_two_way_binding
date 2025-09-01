@@ -1,4 +1,12 @@
 <main>
-  <h2> Hello {{ firstName }}!</h2>
-  <input type="text" [(ngModel)]="firstName" />
+  <section>
+    <h2> Hello {{ firstName }}!</h2>
+    <input type="text" [(ngModel)]="firstName"/>
+  </section>
+  <section>
+    <button (click)="updateCount(-1)">-</button>
+    <span>{{ count() }}</span>
+    <button (click)="updateCount(+1)">+</button>
+  </section>
 </main>
+
