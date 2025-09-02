@@ -3,7 +3,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
   font-family: Arial, sans-serif;
   background: #f7f9fc;
   color: #333;
@@ -47,7 +47,7 @@ main {
         color: white;
 
         &:hover {
-          background: darken(#e74c3c, 10%);
+          background-color: #e74c3c;
         }
       }
 
@@ -56,7 +56,7 @@ main {
         color: white;
 
         &:hover {
-          background: darken(#2ecc71, 10%);
+          background: #2ecc71;
         }
       }
 
